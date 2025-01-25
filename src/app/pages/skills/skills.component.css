@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+  .main-container {
+    padding: 1px;
+  }
+}
+
+p {
+  font-size: 5rem;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.main-container {
+  border: 0.5px solid black;
+  border-radius: 30px;
+}
+
+.container {
+  max-width: 800px !important;
+}
+
+.skill-image img {
+  transition: transform 0.3s ease;
+  overflow: hidden;
+
+}
+
+
+.skill-image:hover img {
+  transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+.skill-text {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  font-size: 18px; /* Ajusta el tamaño del texto según necesites */
+  color: #000; /* Cambia el color del texto */
+  margin-top: 10px; /* Espaciado debajo de la imagen */
+}
+.skill-image:hover .skill-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+.skill-image img:hover {
+  transform: scale(1.2);
+}
+.skill-image:hover img {
+  transform: scale(1.2);
+}
